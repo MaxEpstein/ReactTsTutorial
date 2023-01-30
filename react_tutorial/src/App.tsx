@@ -4,6 +4,7 @@ import './App.css';
 import InputField from './components/InputField';
 import TodoList from './components/TodoList';
 import { Todo } from './model';
+import Nav from './components/Nav/Nav';
 
 
 const App: React.FC = () => {
@@ -27,6 +28,11 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
+
+      <>
+        <Nav />
+      </>
+
       <span className="heading">Taskify</span>
 
       <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
